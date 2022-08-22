@@ -31,6 +31,8 @@ you can run one of the followin command in your terminal
 
 - GitHub: [divinecharlotte](https://github.com/divinecharlotte)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/charlotte-divine-dusenge/)
+
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
