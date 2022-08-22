@@ -23,6 +23,8 @@ Run the command bellow in your terminal to get all required files
 you can run one of the followin command in your terminal
 
 > Rubocop --color
+
+
 > Rubocop -A
 
 ## Authors
