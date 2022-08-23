@@ -1,16 +1,23 @@
 # frozen_string_literal: true
 
+require_relative 'name_able'
+
 # class called person
-class Person
+class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age
 
   # initializing the class person
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+  end
+
+  def correct_name
+    @name
   end
 
   # Private method is_of_age?

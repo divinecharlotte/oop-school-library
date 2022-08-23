@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+require_relative 'name_able'
+# adding base decorator class
+class BaseDecorator < Nameable
+  def initialize(nameable_obj)
+    super()
+    @nameable_obj = nameable_obj
+  end
+
+  def correct_name
+    @nameable_obj.correct_name
+  end
+end
