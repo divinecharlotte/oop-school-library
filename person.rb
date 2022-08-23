@@ -7,11 +7,15 @@ class Person < Nameable
 
   # initializing the class person
   def initialize(age, nameable, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @nameable = nameable
+  end
+
+  def correct_name
+    @name
   end
   # Private method is_of_age?
   def of_age?
