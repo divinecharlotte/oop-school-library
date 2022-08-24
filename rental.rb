@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 require_relative 'book'
+# creating class Rental
 class Rental
   attr_accessor :date, :book, :person
 
