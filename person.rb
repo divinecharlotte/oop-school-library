@@ -4,7 +4,7 @@ require_relative 'name_able'
 
 # class called person
 class Person < Nameable
-  attr_reader :id
+  attr_reader :id, :rentals
   attr_accessor :name, :age
 
   # initializing the class person
@@ -14,6 +14,11 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
+  end
+  
+  def add_rental(date, book)
+    Rental.new(date, self, book)
   end
 
   def correct_name
