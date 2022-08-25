@@ -36,7 +36,7 @@ def create_person(person)
   when 2
     print 'Specialization: '
     specialization = gets.chomp
-    person.push(Teacher.new(specialization, age, name))
+    person.push(Teacher.new(age, name, specialization))
   end
   puts 'Person created successfully.'
 end
