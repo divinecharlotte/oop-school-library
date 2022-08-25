@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'person'
 require_relative 'capitalize_decolator'
 require_relative 'trim_decolator'

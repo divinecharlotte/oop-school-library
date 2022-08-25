@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'base_decolator'
 # adding capitalize decolator class
 class CapitalizeDecorator < BaseDecorator
