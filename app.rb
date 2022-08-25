@@ -35,7 +35,7 @@ def create_person(person)
     person.push(Student.new(nil, age, name, parent_permission: student_permission))
   when 2
     print 'Specialization: '
-    specialization = gets.chomp
+    specialization = gets.chomp.to_s
     person.push(Teacher.new(age, name, specialization))
   end
   puts 'Person created successfully.'
