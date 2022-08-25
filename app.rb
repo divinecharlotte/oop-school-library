@@ -68,4 +68,11 @@ def create_person(person)
         rentals.push(Rental.new(provided_date, people[selected_person], books[selected_book]))
         puts ' rental created succesfully'
     end
- 
+    
+    def list_all_rentals_by_id(rentals)
+        print 'ID of person: '
+        person_id = gets.chomp.to_i
+        rentals.map do |rental|
+          puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+        end
+      end
