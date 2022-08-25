@@ -1,6 +1,7 @@
 require_relative 'book'
 require_relative 'teacher'
 require_relative 'student'
+require_relative 'rental'
 
 def list_all_books(books)
     if books.empty?
@@ -46,6 +47,25 @@ def create_person(person)
         title = gets.chomp
         print 'author:'
         author = gets.chomp
-        bookhs.push(Book.new(title, author))
+        books.push(Book.new(title, author))
         puts 'the book is created successfully'
     end
+    end
+    
+    def create_rental(books, people, rentals)
+        puts 'Select a book from the following list by number'
+        books.map.with_index { |book, index| puts "#{index}) Title: '#{book.title}', Author: #{book.author}" }
+        selected_book = gets.chomp.to_i
+      
+        puts 'Select a person from the following list by number (Not ID): '
+        people.map.with_index do |person, index|
+          puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        end
+      
+        selected_person = gets.chomp.to_i
+        print 'date:'
+        date = gets.chomp
+        rentals.push(Rental.new(provided_date, people[selected_person], books[selected_book]))
+        puts ' rental created succesfully'
+    end
+ 
