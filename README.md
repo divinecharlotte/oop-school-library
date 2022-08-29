@@ -32,7 +32,12 @@ you can run one of the followin command in your terminal
 👤 **Charlotte Divine**
 
 - GitHub: [divinecharlotte](https://github.com/divinecharlotte)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/charlotte-divine-dusenge/)
+- LinkedIn: [charlotte-divine](https://www.linkedin.com/in/charlotte-divine-dusenge/)
+
+👤 **Steven**
+
+- GitHub: [sntakirutimana72](https://github.com/sntakirutimana72)
+- LinkedIn: [steve-ntakirutimana](https://www.linkedin.com/in/steve-ntakirutimana/)
 
 
 Contributions, issues, and feature requests are welcome!
