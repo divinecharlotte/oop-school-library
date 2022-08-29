@@ -63,14 +63,15 @@ def create_rental(books, people, rentals)
   selected_person = gets.chomp.to_i
   print 'date:'
   provided_date = gets.chomp
-  rentals.push(Rental.new(provided_date, people[selected_person], books[selected_book]))
+  rentals.push(Rental.new(provided_date, books[selected_book], people[selected_person]))
   puts ' rental created succesfully'
 end
 
 def list_all_rentals_by_id(rentals)
   print 'ID of person: '
   person_id = gets.chomp.to_i
-  rentals.map do |rental|
-    puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
+  (rentals.select {|rental| rental.person.id == person_id}).each do |rental|
+    puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" 
+
   end
 end
