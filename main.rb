@@ -7,7 +7,7 @@ def main
     option = gets.chomp.to_i
     case option
     when 1..6
-     factory.dispatch(option)
+      factory.dispatch(option)
     else
       break
     end
