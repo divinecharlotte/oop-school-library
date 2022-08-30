@@ -12,5 +12,6 @@ def main
       break
     end
   end
+  factory.on_exit
 end
 main

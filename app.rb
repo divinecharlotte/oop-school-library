@@ -2,12 +2,16 @@ require_relative 'book'
 require_relative 'teacher'
 require_relative 'student'
 require_relative 'rental'
+require_relative 'storage'
 
 class App
+  include Storage
+
   def initialize
     @books = []
     @people = []
     @rentals = []
+    load_all
   end
 
   def list_all_books
