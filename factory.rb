@@ -4,6 +4,10 @@ class Factory
     @app = App.new
   end
 
+  def on_exit
+    @app.dump_all
+  end
+
   def display_list
     puts 'Welcome to School library App!'
     puts "
